@@ -11,14 +11,16 @@ var numbers ="1234567890";
 
 // Create function generate password
 function generatePassword(){
+  //ask how many characters 
+  var howMany = prompt("How many characters do you want in the password?");
   //ask for special characters
-  var askSpecial = confirm("Click OK to include special characters");
+  var askSpecial = confirm("Click OK if you want to include special characters");
   //ask for lowercase characters
-  var askLower = confirm("Click OK to include lower case letters");
+  var askLower = confirm("Click OK if you want to include lowercase letters");
   //ask for uppercase characters
-  var askUpper = confirm("Click OK to include upper case letters");
+  var askUpper = confirm("Click OK if you want to include uppercase letters");
   //ask for numbers
-  var askNumbers = confirm("Click OK to include numbers");
+  var askNumbers = confirm("Click OK if you want to include numbers");
   //We have to return the password
 
 }
