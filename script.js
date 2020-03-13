@@ -1,18 +1,28 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
 //all special characters
-var special = "!@#$%^&*()";
+var special = "!@#$%^&*()./?[]{}";
+
 //all lowercase characters
-var lower = "asdfghjklpoiuytrewq";
+var lower = "abcdefghijklmnopqrstuvwxyz";
+
 //all uppercase characters
-var upper = "ASDFGHJKLPOIUYTREWQ";
+var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 //all numbers
-var numbers ="1234567890";
+var numbers = "0123456789";
+
 //final password
+var passwordFinal = "";
+
+
 // Create function generate password
 function generatePassword(){
   //ask how many characters 
   var howMany = prompt("How many characters do you want in the password?");
+
+  // conditional to check number of characters if( howmany < 8 || howmany > 128)
   //ask for special characters
   var askSpecial = confirm("Click OK if you want to include special characters");
   //ask for lowercase characters
@@ -22,6 +32,14 @@ function generatePassword(){
   //ask for numbers
   var askNumbers = confirm("Click OK if you want to include numbers");
   //We have to return the password
+
+  
+  for ( var i = 0; i < howMany; i++) {
+   
+    
+  }
+
+  return passwordFinal;
 
 }
 
