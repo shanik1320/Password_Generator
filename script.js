@@ -8,7 +8,7 @@ var lower = "asdfghjklpoiuytrewq";
 var upper = "ASDFGHJKLPOIUYTREWQ";
 //all numbers
 var numbers ="1234567890";
-
+//final password
 // Create function generate password
 function generatePassword(){
   //ask how many characters 
