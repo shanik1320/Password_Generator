@@ -24,6 +24,7 @@ var allCharacters = [""];
 function generatePassword(){
   //ask how many characters
   var howMany = prompt("How many characters do you want in your password?")
+  if (howMany > 8 && howMany < 120) {
    //ask for special characters
    var askSpecial = confirm("Click OK if you want to include special characters");
    //ask for lowercase characters
@@ -56,6 +57,7 @@ function generatePassword(){
   //We have to return the password
   return passwordFinal;
 
+}
 }
 
 
