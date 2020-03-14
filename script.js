@@ -19,13 +19,11 @@ var passwordFinal = "";
 //all characters array
 var allCharacters = [""];
 
-//ask how many characters
-var howMany = prompt("How many characters do you want in your password?");
-
+;
 // Create function generate password
 function generatePassword(){
- 
-  
+  //ask how many characters
+  var howMany = prompt("How many characters do you want in your password?")
    //ask for special characters
    var askSpecial = confirm("Click OK if you want to include special characters");
    //ask for lowercase characters
@@ -59,6 +57,7 @@ function generatePassword(){
   return passwordFinal;
 
 }
+
 
 // Write password to the #password input
 function writePassword() {
