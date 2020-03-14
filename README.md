@@ -14,3 +14,6 @@
         -Do you want numbers?
 
 ### Then I created If statements to 
+
+
+![Image description](random_password.png)
