@@ -8,10 +8,11 @@
 ## How does it work
 ### When clicking the Generate Password button there is series of question that you are going to be asked.
 ### For example:  
-        -How many characters do you want the password to have? The characters must be between 8 and 120.
-        -Do you want lowercase letters?
-        -Do you want uppercase letters?
-        -Do you want numbers?
+
+* How many characters do you want the password to have? The characters must be between 8 and 120.
+* Do you want lowercase letters?
+* Do you want uppercase letters?
+* Do you want numbers?
 
 ### Then I created If statements to 
 
