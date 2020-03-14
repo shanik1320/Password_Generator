@@ -16,29 +16,46 @@ var numbers = "0123456789";
 //final password
 var passwordFinal = "";
 
+//all characters array
+var allCharacters = [""];
+
+//ask how many characters
+var howMany = prompt("How many characters do you want in your password?");
 
 // Create function generate password
 function generatePassword(){
-  //ask how many characters 
-  var howMany = prompt("How many characters do you want in the password?");
-
-  // conditional to check number of characters if( howmany < 8 || howmany > 128)
-  //ask for special characters
-  var askSpecial = confirm("Click OK if you want to include special characters");
-  //ask for lowercase characters
-  var askLower = confirm("Click OK if you want to include lowercase letters");
-  //ask for uppercase characters
-  var askUpper = confirm("Click OK if you want to include uppercase letters");
-  //ask for numbers
-  var askNumbers = confirm("Click OK if you want to include numbers");
-  //We have to return the password
-
+ 
   
-  for ( var i = 0; i < howMany; i++) {
-   
-    
-  }
+   //ask for special characters
+   var askSpecial = confirm("Click OK if you want to include special characters");
+   //ask for lowercase characters
+   var askLower = confirm("Click OK if you want to include lowercase letters");
+   //ask for uppercase characters
+   var askUpper = confirm("Click OK if you want to include uppercase letters");
+   //ask for numbers
+   var askNumbers = confirm("Click OK if you want to include numbers");
+   // if statement if they want special characters
+   if (askSpecial) {
+     allCharacters= allCharacters + special;
+   }
+   // if statement if they want lower case letters
+   if (askLower) {
+     allCharacters = allCharacters + lower;
+   }
+   // if statement if they want upper case letters
+   if (askUpper) {
+     allCharacters = allCharacters + upper;
+   }
+   //if statement if they want numbers
+   if (askNumbers) {
+     allCharacters = allCharacters + numbers
+   }
 
+  for ( var i = 0; i < howMany; i++) {
+    passwordFinal= passwordFinal + allCharacters.charAt(Math.floor(Math.random() * allCharacters.length));
+   }
+
+  //We have to return the password
   return passwordFinal;
 
 }
