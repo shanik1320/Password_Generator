@@ -16,7 +16,7 @@
 
 ### Then I created If statements to know what kind of characters does the user want to use; like numbers, symbols, lowercase and uppercase.
 ### If they agreed to some or all the password will include all or some of the characters chosen.
-### Then i did a for loop, with Math.floor(Math.random) that way all the characters and number will be chosen random
+### Then I did a for loop, with Math.floor(Math.random) that way all the characters and numbers will be chosen at random. Also added a return for the password to show up on the screen.
 
 
 ![Image description](random_password.png)
